@@ -1,3 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: hsl(232, 50%, 33%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+button {
+  width: 8.3333333333%;
+  margin: 5px 0;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(232, 50%, 33%);
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(232, 50%, 33%);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+h2 input,
+h2 code {
+  width: fit-content;
+  padding: 5px;
+  color: hsl(232, 50%, 33%);
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+h2 .cubicBezierInputs {
+  width: 75px;
+  max-width: 100px;
+}
+
+body {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: hsl(0, 5%, 90%);
+}
+
+.timing {
+  width: 100%;
+  padding: 5vh 2.5vw;
+}
+.timing__header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.timing__list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.timing__animation {
+  height: 43.3333333333px;
+  position: relative;
+  border-radius: 5px;
+  background-color: hsl(232, 15%, 15%);
+}
+.timing__animation img {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  animation: carAnimate 3s infinite forwards;
+  animation-play-state: paused;
+}
+.timing__animation--linear img {
+  animation-timing-function: linear;
+  transition-timing-function: linear;
+}
+.timing__animation--ease img {
+  animation-timing-function: ease;
+  transition-timing-function: ease;
+}
+.timing__animation--ease-in img {
+  animation-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.timing__animation--ease-in-out img {
+  animation-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.timing__animation--ease-out img {
+  animation-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.timing__animation--steps img {
+  animation-timing-function: steps(20);
+  transition-timing-function: ease;
+}
+.timing__animation--cubic-bezier img {
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  transition-timing-function: ease;
+}
+
+@keyframes carAnimate {
+  from {
+    left: 10px;
+  }
+  to {
+    left: calc(100% - 50px - 10px);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,7 +18,67 @@
 
 <body>
 
-    <section class="timing"></section>
+    <section class="timing">
+
+        <div class="timing__header">
+            <h1>CSS timing functions values</h1>
+            <button>Start</button>
+        </div>
+
+        <ul class="timing__list">
+
+            <li class="timing__list-item">
+                <h2>Linear</h2>
+                <div class="timing__animation timing__animation--linear">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Ease</h2>
+                <div class="timing__animation timing__animation--ease">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Ease-in</h2>
+                <div class="timing__animation timing__animation--ease-in">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Ease-in-out</h2>
+                <div class="timing__animation timing__animation--ease-in-out">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Ease-out</h2>
+                <div class="timing__animation timing__animation--ease-out">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Steps <input id="steps" type="number" min="1" max="999" value="10"/></h2>
+                <div class="timing__animation timing__animation--steps">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+            <li class="timing__list-item">
+                <h2>Cubic-bezier <code>(0.5, 0, 0.5, 1)</code></h2>
+                <div class="timing__animation timing__animation--cubic-bezier">
+                    <img src="/dist/images/car.svg" alt="Ma petite voiture faite avec Illustrator">
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
 
 <!-- Scripts -->
 <script src="/dist/js/script.js"></script>
