@@ -1,7 +1,7 @@
 {
-  "name": "gameboy",
+  "name": "css-timing",
   "version": "1.0.0",
-  "description": "Minimal Gameboy design and creative development.",
+  "description": "CSS Timing functions values.",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,10 +15,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theo-feschotte/gameboy.git"
+    "url": "git+https://github.com/theo-feschotte/css-timing.git"
   },
   "bugs": {
-    "url": "https://github.com/theo-feschotte/gameboy/issues"
+    "url": "https://github.com/theo-feschotte/css-timing/issues"
   },
-  "homepage": "https://github.com/theo-feschotte/gameboy#readme"
+  "homepage": "https://github.com/theo-feschotte/css-timing#readme"
 }
